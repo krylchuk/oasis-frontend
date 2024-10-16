@@ -112,7 +112,7 @@ export default class CreateNewService extends Component {
                 addedfile: this.handleImageDrop,
               }}
             >
-              <div className='dz-message'>Upload Image</div>
+              <div className='dz-message'>Añadir Imagen</div>
             </DropzoneComponent>
           </div>
 
