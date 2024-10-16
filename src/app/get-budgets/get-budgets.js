@@ -10,7 +10,7 @@ const Budgets = () => {
   useEffect(() => {
     const fetchBudgets = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/budgets');
+        const response = await axios.get('https://oasis-backend-nfuv.onrender.com/budgets');
         setBudgets(response.data);
       } catch (error) {
         console.error('Error fetching budgets:', error);
@@ -23,7 +23,7 @@ const Budgets = () => {
   
   const markAsCompleted = async (budgets_id) => {
     try {
-      await axios.put(`http://localhost:5000/budgets/${budgets_id}`, { budgets_status: 1 });
+      await axios.put(`https://oasis-backend-nfuv.onrender.com/budgets/${budgets_id}`, { budgets_status: 1 });
       setBudgets((prevBudgets) =>
         prevBudgets.map((budget) =>
           budget.budgets_id === budgets_id ? { ...budget, budgets_status: 1 } : budget

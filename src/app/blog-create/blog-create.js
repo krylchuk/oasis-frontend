@@ -32,7 +32,7 @@ const CreateBlog = () => {
     formData.append('blogs_image', image);
 
     try {
-      const response = await axios.post('http://localhost:5000/blogs', formData, {
+      const response = await axios.post('https://oasis-backend-nfuv.onrender.com/blogs', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

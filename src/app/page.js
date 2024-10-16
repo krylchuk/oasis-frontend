@@ -9,12 +9,15 @@ export default function Home() {
       
       <div className="hero">
         <div className="hero-content">
-          <Image 
-            src='/home-image.jpg' 
-            alt='Home Image'
-            width={800}
-            height={500}
-          />
+          <div className='hero-image'>
+            <Image 
+              src='/home-image.jpg' 
+              alt='Home Image'
+              width={800}
+              height={500}
+            />
+          </div>
+          
           <h1>Servicios de jardineria para tu jardin</h1>
           <p>Ofrecemos servicios de alta calidad.</p>
           <Link href="/about">

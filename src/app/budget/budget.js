@@ -51,7 +51,7 @@ const Budget = () => {
     e.preventDefault();
 
     
-    axios.post('http://localhost:5000/create_budget', formData, {
+    axios.post('https://oasis-backend-nfuv.onrender.com/create_budget', formData, {
       headers: {
         'Content-Type': 'application/json'
       }

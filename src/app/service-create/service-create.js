@@ -57,7 +57,7 @@ export default class CreateNewService extends Component {
     
     console.log("Form data:", formData); 
 
-    axios.post('http://127.0.0.1:5000/services', formData, {
+    axios.post('https://oasis-backend-nfuv.onrender.com/services', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

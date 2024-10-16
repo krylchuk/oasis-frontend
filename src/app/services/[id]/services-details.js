@@ -25,7 +25,7 @@ const ServicesDetails = () => {
       
       const fetchService = async () => {
         try {
-          const response = await axios.get(`http://localhost:5000/services/${id}`);
+          const response = await axios.get(`https://oasis-backend-nfuv.onrender.com/services/${id}`);
           const serviceData = response.data;
 
           

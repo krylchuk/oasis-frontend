@@ -13,7 +13,7 @@ export default function Login() {
   useEffect(() => {
     const checkAdminLoggedIn = async () => {
       try {
-        const response = await axios.get('http://127.0.0.1:5000/check-admin', {
+        const response = await axios.get('https://oasis-backend-nfuv.onrender.com/check-admin', {
           withCredentials: true,
         });
 
@@ -32,7 +32,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/login', {
+      const response = await axios.post('https://oasis-backend-nfuv.onrender.com/login', {
         email,
         password,
       }, {

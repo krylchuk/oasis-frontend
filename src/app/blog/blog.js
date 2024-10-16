@@ -12,7 +12,7 @@ const BlogList = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/blogs'); 
+        const response = await axios.get('https://oasis-backend-nfuv.onrender.com/blogs'); 
         const sortedBlogs = response.data.sort((a, b) => new Date(b.blogs_date) - new Date(a.blogs_date)); 
         setBlogs(sortedBlogs);
       } catch (err) {

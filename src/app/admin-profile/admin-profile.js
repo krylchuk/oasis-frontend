@@ -33,7 +33,7 @@ export default function AdminProfile() {
         admins_password: password, 
       };
 
-      await axios.put(`http://localhost:5000/admins/${admin.admins_id}`, updatedAdmin);
+      await axios.put(`https://oasis-backend-nfuv.onrender.com/admins/${admin.admins_id}`, updatedAdmin);
       
       
       localStorage.setItem('admin', JSON.stringify({ ...admin, ...updatedAdmin }));
@@ -47,7 +47,7 @@ export default function AdminProfile() {
   const handleDelete = async () => {
     if (confirm('Are you sure you want to delete your profile?')) {
       try {
-        await axios.delete(`http://localhost:5000/admins/${admin.admins_id}`);
+        await axios.delete(`https://oasis-backend-nfuv.onrender.com/admins/${admin.admins_id}`);
         localStorage.removeItem('admin'); 
         router.push('/login'); 
       } catch (error) {

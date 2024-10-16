@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 
-import './style/main.scss';
+import '../style/main.scss';
 import Header from '../components/header';
 import Footer from '../components/footer';
 

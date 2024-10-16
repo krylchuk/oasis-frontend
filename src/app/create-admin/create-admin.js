@@ -19,7 +19,7 @@ const AddAdmin = () => {
     }; 
 
     try {
-      const response = await axios.post('http://localhost:5000/add_admin', adminData, {
+      const response = await axios.post('https://oasis-backend-nfuv.onrender.com/add_admin', adminData, {
         headers: {
           'Content-Type': 'application/json',
         },

@@ -13,7 +13,7 @@ const BlogPost = () => {
     const fetchBlog = async () => {
       if (id) { 
         try {
-          const response = await axios.get(`http://localhost:5000/blogs/${id}`); 
+          const response = await axios.get(`https://oasis-backend-nfuv.onrender.com/blogs/${id}`); 
           setBlog(response.data);
         } catch (err) {
           setError('No se pudo cargar el articulo'); 

@@ -20,7 +20,7 @@ const Header = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/services');
+        const response = await axios.get('https://oasis-backend-nfuv.onrender.com/services');
         setServices(response.data.services); 
       } catch (error) {
         console.error('Error fetching services:', error);
@@ -41,7 +41,7 @@ const Header = () => {
           priority 
         />
       </div>
-      
+
       <div className="navbar">
         <div className="nav-links">
           <Link href="/" className="header-link">Inicio</Link>
