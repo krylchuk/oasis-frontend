@@ -10,6 +10,12 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 
+  h1 {
+    font-size: 2.5em;
+    color: $darkgray;
+    margin-bottom: 20px;
+  }
+
   .service-details-image {
     width: 1200px;
     display: flex;
@@ -28,14 +34,9 @@
 
   .service-details-content {
     text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
   
-    h1 {
-      font-size: 2.5em;
-      color: $darkgray;
-      margin-bottom: 20px;
-    }
-  
-    
     div {
       font-size: 1.2em;
       line-height: 1.8;

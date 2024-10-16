@@ -49,6 +49,8 @@ const ServicesDetails = () => {
 
   return (
     <div className="service-details-container">
+      <h1>{service.services_name}</h1>
+
       <div className="service-details-image">
         <img
           src={service.services_image_url}
@@ -57,11 +59,8 @@ const ServicesDetails = () => {
         />
       </div>
       <div className="service-details-content">
-        <h1>{service.services_name}</h1>
         <div dangerouslySetInnerHTML={{ __html: serviceDescriptionHtml }} />
       </div>
-
-      
     </div>
   );
 };
