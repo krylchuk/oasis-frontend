@@ -1,0 +1,80 @@
+.admin-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: $gray;
+  height: 100vh;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: $darkgray;
+  }
+
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    background-color: $white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    
+    .form-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: $darkgray;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid $green;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: $green;
+        }
+      }
+    }
+
+    
+    .admin-button {
+      background-color: $green;
+      color: rgb(10, 13, 11);
+      padding: 12px;
+      font-size: 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 15px;
+
+      &:hover {
+        background-color: $greenlite;
+      }
+    }
+  }
+
+  
+  .admin-button-delete-button {
+    background-color: $green;
+    height: 40px;
+
+    &:hover {
+      background-color: $greenlite  
+    }
+  }
+}

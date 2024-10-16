@@ -1,0 +1,54 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+
+.admin-dashboard h2 {
+  font-size: 2.2em;
+  color: $darkgray;
+  margin-bottom: 30px;
+}
+
+
+.admin-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+
+  .admin-button {
+    background-color: $green;
+    color: $white;
+    padding: 15px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+  }
+
+  .admin-button:hover {
+    background-color: $greenlite;
+  }
+}
+
+
+.admin-actions .admin-button:last-child {
+  background-color: $green;
+}
+
+.admin-actions .admin-button:last-child:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,67 @@
+.add-admin-container {
+  width: 100%;
+  padding: 20px;
+  background-color: $gray;
+  height: 80vh;
+  
+
+  
+  .add-admin-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: $darkgray;
+  }
+
+  
+  .add-admin-form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    
+    .form-group {
+      margin-bottom: 15px;
+
+      
+      .form-label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: $darkgray;
+      }
+      .form-input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1em;
+        width: 96%;
+      }
+    }
+    
+   
+    .submit-button {
+      background-color: $green;
+      color: $white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $greenlite;
+      }
+    }
+  }
+
+  
+  .response-message {
+    margin-top: 20px;
+    text-align: center;
+    color: $red;
+  }
+}
